@@ -14,18 +14,17 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ActorsInMovie[0].Movie)
+                ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ActorsInMovie[0].Actors)
+                Actor's name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Actor[0].FirstName)
+                Movie Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Title)
+                Actions
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -33,9 +32,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Movie.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Actors.ID)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Actors.FirstName) @Html.DisplayFor(modelItem => item.Actors.LastName)
