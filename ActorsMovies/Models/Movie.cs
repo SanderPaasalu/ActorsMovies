@@ -13,7 +13,7 @@ namespace ActorsMovies.Models
         public DateTime ReleaseDate { get; set; }
         public string Genre { get; set; }
         public string Director { get; set; }
-        public string Rating { get; set; }
+        public int Rating { get; set; }
 
         public ICollection<ActorsInMovie> ActorsInMovies { get; set; }
 
