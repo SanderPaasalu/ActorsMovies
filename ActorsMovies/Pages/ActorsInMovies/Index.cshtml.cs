@@ -20,6 +20,8 @@ namespace ActorsMovies.Pages.ActorsInMovies
         }
 
         public IList<ActorsInMovie> ActorsInMovie { get;set; }
+        public IList<Actor> Actor { get; }
+        public IList<Movie> Movie { get; }
 
         public async Task OnGetAsync()
         {

@@ -1,5 +1,5 @@
 ﻿@page
-@model ActorsMovies.Pages.ActorsInMovies.IndexModel
+@model ActorsMovies.Pages.ActorsInMovies.IndexModel 
 
 @{
     ViewData["Title"] = "Index";
@@ -19,6 +19,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.ActorsInMovie[0].Actors)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actor[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Title)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -30,6 +36,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Actors.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actors.FirstName) @Html.DisplayFor(modelItem => item.Actors.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.Title)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
